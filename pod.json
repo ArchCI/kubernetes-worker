@@ -1,0 +1,15 @@
+{
+    "id": "nginx",
+    "kind": "Pod",
+    "apiVersion": "v1beta1",
+    "desiredState": {
+        "manifest": {
+            "version": "v1beta1",
+            "id": "nginx",
+            "containers": [{
+                "image": "nginx",
+                "command": ["/archci.sh"]
+            }]
+        }
+    }
+}
